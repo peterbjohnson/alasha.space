@@ -1,0 +1,15 @@
+{{- with site.GetPage "/interviews" }}
+{{- $section := . }}
+{{- with index .Pages.ByWeight 0 }}
+<section id="interviews" class="shell section split">
+  <div class="portrait-art" role="img" aria-label="{{ i18n "decorative" }}"></div>
+  <div class="split-copy">
+    {{- with $section.Params.eyebrow }}<p class="eyebrow">{{ . }}</p>{{ end }}
+    <h2>{{ .Title }}</h2>
+    {{- with .Params.summary }}<p class="lead small">{{ . }}</p>{{ end }}
+    {{- partial "meta.html" (dict "page" .) }}
+    <a class="button primary" href="{{ .RelPermalink }}">{{ i18n "readInterview" }}</a>
+  </div>
+</section>
+{{- end }}
+{{- end }}

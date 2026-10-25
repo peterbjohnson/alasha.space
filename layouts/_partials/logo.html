@@ -1,0 +1,5 @@
+{{- /* Never serve the 1.4 MB original; the CSS scales the image to crop its transparent padding. */ -}}
+{{- with resources.Get "images/logo.png" -}}
+{{- $img := .Resize "400x webp" -}}
+<img src="{{ $img.RelPermalink }}" width="{{ $img.Width }}" height="{{ $img.Height }}" alt="{{ site.Title }}">
+{{- end -}}

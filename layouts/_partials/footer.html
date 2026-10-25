@@ -1,0 +1,15 @@
+<footer class="footer shell">
+  <div class="footer-brand">{{ partial "logo.html" . }}<p>{{ i18n "footerTagline" }}</p></div>
+  <div class="footer-links">
+    {{- with site.GetPage "/texts" }}<a href="{{ .RelPermalink }}">{{ i18n "journal" }}</a>{{ end }}
+    {{- with site.GetPage "/courses" }}<a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{ end }}
+    <a href="{{ site.Home.RelPermalink }}#submit">{{ i18n "authors" }}</a>
+    {{- with site.GetPage "/about" }}<a href="{{ .RelPermalink }}">{{ i18n "about" }}</a>{{ end }}
+  </div>
+  <div class="footer-meta">
+    <p>
+      {{- range $i, $s := site.Params.social }}{{ if $i }} · {{ end }}<a href="{{ $s.url }}">{{ $s.name }}</a>{{ end -}}
+    </p>
+    <p>© {{ now.Year }} {{ site.Title }}</p>
+  </div>
+</footer>

@@ -1,0 +1,10 @@
+{{- with site.GetPage "/texts" }}
+<section id="texts" class="shell section">
+  {{ partial "section-head.html" (dict "eyebrow" .Params.eyebrow "heading" .Params.heading "link" .RelPermalink "linkText" (i18n "allTexts")) }}
+  <div class="feature-grid">
+    {{- range $i, $p := first 3 .Pages.ByWeight }}
+    {{ partial "cards/texts.html" (dict "page" $p "index" $i "large" (eq $i 0)) }}
+    {{- end }}
+  </div>
+</section>
+{{- end }}

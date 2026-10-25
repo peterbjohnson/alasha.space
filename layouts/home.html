@@ -1,0 +1,41 @@
+{{ define "main" }}
+<section class="hero shell">
+  <div class="hero-copy">
+    {{- with .Params.eyebrow }}<p class="eyebrow">{{ . }}</p>{{ end }}
+    <h1>{{ .Params.heading | default .Title | safeHTML }}</h1>
+    {{- with .Params.lead }}<p class="lead">{{ . }}</p>{{ end }}
+    <div class="hero-actions">
+      <a class="button primary" href="#texts">{{ .Params.ctaPrimary }}</a>
+      <a class="button ghost" href="#courses">{{ .Params.ctaSecondary }}</a>
+    </div>
+  </div>
+  <aside class="hero-note">
+    <span class="note-mark">{{ .Params.noteMark }}</span>
+    <h2>{{ .Params.noteTitle }}</h2>
+    <p>{{ .Params.noteText }}</p>
+    {{- with site.GetPage "/texts" }}<a href="{{ .RelPermalink }}">{{ $.Params.noteLink }}</a>{{ end }}
+  </aside>
+</section>
+
+{{ partial "ornament.html" . }}
+{{ partial "home/texts.html" . }}
+{{ partial "home/books.html" . }}
+{{ partial "home/interview.html" . }}
+{{ partial "home/cinema.html" . }}
+{{ partial "home/courses.html" . }}
+{{ partial "home/events.html" . }}
+
+<section id="submit" class="shell section submit-section">
+  <div>
+    {{- with .Params.submitEyebrow }}<p class="eyebrow">{{ . }}</p>{{ end }}
+    {{- with .Params.submitTitle }}<h2>{{ . }}</h2>{{ end }}
+    {{- with .Params.submitText }}<p class="lead small">{{ . }}</p>{{ end }}
+  </div>
+  <div>
+    <a class="button primary" href="mailto:{{ site.Params.email }}">{{ i18n "submitText" }}</a>
+    {{- with .Params.submitFine }}<p class="fine">{{ . }}</p>{{ end }}
+  </div>
+</section>
+
+{{ partial "newsletter.html" . }}
+{{ end }}

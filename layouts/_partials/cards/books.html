@@ -1,0 +1,9 @@
+{{- $p := .page -}}
+<article class="book">
+  <div class="book-cover cover-{{ $p.Params.coverStyle | default "a" }}" aria-hidden="true">{{ $p.Params.coverLetter }}</div>
+  <div>
+    {{- partial "meta.html" (dict "page" $p) }}
+    <h3><a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a></h3>
+    {{- with $p.Params.summary }}<p>{{ . }}</p>{{ end }}
+  </div>
+</article>

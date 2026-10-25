@@ -1,0 +1,36 @@
+baseURL = 'https://alasha.space/'
+title = 'Alashá space'
+
+defaultContentLanguage = 'ru'
+defaultContentLanguageInSubdir = true
+disableKinds = ['taxonomy', 'term']
+
+[languages]
+  [languages.ru]
+    locale = 'ru-RU'
+    label = 'RU'
+    title = 'Alashá space'
+    contentDir = 'content/ru'
+    weight = 1
+    [languages.ru.params]
+      description = 'Alashá space — пространство для пишущих женщин из Центральной и Северной Азии.'
+  [languages.en]
+    locale = 'en-GB'
+    label = 'EN'
+    title = 'Alashá space'
+    contentDir = 'content/en'
+    weight = 2
+    [languages.en.params]
+      description = 'Alashá space — a space for women writers from Central and North Asia.'
+
+[params]
+  email = 'hello@alasha.space'
+  [[params.social]]
+    name = 'Instagram'
+    url = '#'
+  [[params.social]]
+    name = 'Telegram'
+    url = '#'
+  [[params.social]]
+    name = 'YouTube'
+    url = '#'

@@ -1,0 +1,18 @@
+---
+title: "Alashá space — texts, books, cinema and writing"
+eyebrow: "Women's voices of Central and North Asia"
+heading: "A place where writing becomes <em>space</em>"
+lead: "Stories, essays, interviews, book recommendations and conversations about film. And practical courses for those who want to write more precisely, boldly and freely."
+ctaPrimary: "Read the latest"
+ctaSecondary: "Learn to write"
+noteMark: "No. 01"
+noteTitle: "Theme of the month"
+noteText: "Home as memory: what we inherit, what we take with us and what we create anew."
+noteLink: "Read the selection →"
+submitEyebrow: "Open call"
+submitTitle: "Have a text?"
+submitText: "We accept stories, essays, columns and experimental forms from women writers connected to Central and North Asia."
+submitFine: "Please attach a short bio and your text as .docx or Google Docs."
+newsletterEyebrow: "Alashá letters"
+newsletterTitle: "Every two weeks — the best of the journal and new events"
+---

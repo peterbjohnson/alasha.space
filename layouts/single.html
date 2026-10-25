@@ -1,0 +1,11 @@
+{{ define "main" }}
+<article class="shell section prose">
+  {{- with .Parent }}{{ if not .IsHome }}
+  <p class="eyebrow"><a href="{{ .RelPermalink }}">{{ .Params.eyebrow | default .Title }}</a></p>
+  {{- end }}{{ end }}
+  <h1>{{ .Title }}</h1>
+  {{- partial "meta.html" (dict "page" . "full" true) }}
+  {{- with .Params.summary }}<p class="lead">{{ . }}</p>{{ end }}
+  {{ .Content }}
+</article>
+{{ end }}

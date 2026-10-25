@@ -1,0 +1,18 @@
+<header class="site-header">
+  <a class="brand" href="{{ site.Home.RelPermalink }}" aria-label="{{ site.Title }} — {{ i18n "home" }}">{{ partial "logo.html" . }}</a>
+  <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">{{ i18n "menu" }}</button>
+  <nav id="main-nav" class="nav" aria-label="{{ i18n "mainNav" }}">
+    {{- $current := . }}
+    {{- range site.Menus.main }}
+      {{- if $current.IsMenuCurrent "main" . }}
+      <a href="{{ .URL }}" aria-current="page">{{ .Name }}</a>
+      {{- else if $current.HasMenuCurrent "main" . }}
+      <a href="{{ .URL }}" aria-current="true">{{ .Name }}</a>
+      {{- else }}
+      <a href="{{ .URL }}">{{ .Name }}</a>
+      {{- end }}
+    {{- end }}
+  </nav>
+  {{ partial "lang-switch.html" . }}
+  <a class="pill header-cta" href="{{ site.Home.RelPermalink }}#submit">{{ i18n "submitText" }}</a>
+</header>

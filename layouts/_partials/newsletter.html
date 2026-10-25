@@ -1,0 +1,15 @@
+{{- /* DEMO ONLY: not wired to a newsletter provider. Submitting just shows the success message. */ -}}
+<section class="newsletter">
+  <div class="shell newsletter-inner">
+    <div>
+      {{- with .Params.newsletterEyebrow }}<p class="eyebrow">{{ . }}</p>{{ end -}}
+      {{- with .Params.newsletterTitle }}<h2>{{ . }}</h2>{{ end -}}
+    </div>
+    <form onsubmit="event.preventDefault(); this.classList.add('sent');">
+      <label class="sr-only" for="email">{{ i18n "email" }}</label>
+      <input id="email" type="email" placeholder="{{ i18n "emailPlaceholder" }}" required>
+      <button class="button light" type="submit">{{ i18n "subscribe" }}</button>
+      <p class="success">{{ i18n "subscribed" }}</p>
+    </form>
+  </div>
+</section>

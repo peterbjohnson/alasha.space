@@ -1,0 +1,29 @@
+/* Additions to the prototype stylesheet (main.css stays verbatim). */
+
+/* Language switcher */
+.lang-switch{display:flex;gap:10px;font-size:12px;font-weight:700;letter-spacing:.12em}
+.lang-switch [aria-current]{color:var(--wine)}
+
+/* Current section in the main nav */
+.nav a[aria-current]{color:var(--wine)}
+
+/* Section list pages */
+.section-head h1{font-family:var(--serif);font-weight:500;letter-spacing:-.035em;font-size:48px;margin:0;line-height:1}
+.list-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.cinema-grid h3 a{color:inherit}
+
+/* Single pages */
+.shell.prose{width:min(760px,calc(100% - 40px))}
+.prose h1{font-family:var(--serif);font-weight:500;letter-spacing:-.035em;font-size:clamp(40px,5vw,64px);line-height:1;margin:0 0 20px}
+.prose .lead{margin:24px 0}
+.prose p:not(.eyebrow):not(.meta):not(.lead){font-family:var(--serif);font-size:19px}
+
+@media(max-width:900px){
+  .lang-switch{margin-left:auto}
+  .site-header .menu-toggle{margin-left:0;order:1}
+  .list-grid{grid-template-columns:1fr}
+}
+@media(max-width:580px){
+  .shell.prose{width:calc(100% - 28px)}
+  .section-head h1{font-size:40px}
+}

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="{{ site.Language.Locale }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ or .Description .Params.summary site.Params.description }}">
+  {{- $title := .Title }}
+  {{- if eq .Kind "404" }}{{ $title = i18n "notFound" }}{{ end }}
+  <title>{{ if .IsHome }}{{ $title }}{{ else }}{{ $title }} — {{ site.Title }}{{ end }}</title>
+  <link rel="canonical" href="{{ .Permalink }}">
+  {{- range .AllTranslations }}
+  <link rel="alternate" hreflang="{{ .Language.Locale }}" href="{{ .Permalink }}">
+  {{- end }}
+  {{- with resources.Get "images/logo.png" }}
+  {{- $favicon := (.Resize "88x png").Crop "64x64 center" }}
+  <link rel="icon" type="image/png" href="{{ $favicon.RelPermalink }}">
+  {{- end }}
+  {{- /* Build the slice only from files that exist: resources.Concat fails on nil. */}}
+  {{- $styles := slice }}
+  {{- range slice "css/main.css" "css/hugo.css" }}
+    {{- with resources.Get . }}{{ $styles = $styles | append . }}{{ end }}
+  {{- end }}
+  {{- with $styles }}
+  {{- $css := . | resources.Concat "css/site.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+  {{- end }}
+</head>
+<body>
+  {{ partial "header.html" . }}
+  <main id="top">
+    {{- block "main" . }}{{ end }}
+  </main>
+  {{ partial "footer.html" . }}
+  {{- with resources.Get "js/main.js" }}
+  {{- $js := . | minify | fingerprint }}
+  <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
+  {{- end }}
+</body>
+</html>

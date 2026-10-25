@@ -1,0 +1,13 @@
+{{- /* dict: page, full (bool: also tag, event date/time and price, for single pages) */ -}}
+{{- $p := .page -}}
+{{- $bits := slice -}}
+{{- if .full }}{{ with $p.Params.tag }}{{ $bits = $bits | append . }}{{ end }}{{ end -}}
+{{- with $p.Params.region }}{{ $bits = $bits | append . }}{{ end -}}
+{{- with $p.Params.kicker }}{{ $bits = $bits | append . }}{{ end -}}
+{{- with $p.Params.minutes }}{{ $bits = $bits | append (printf "%v %s" . (i18n "minutes")) }}{{ end -}}
+{{- if .full -}}
+  {{- with $p.Params.eventDate }}{{ $bits = $bits | append (time.Format ":date_long" .) }}{{ end -}}
+  {{- with $p.Params.eventTime }}{{ $bits = $bits | append . }}{{ end -}}
+  {{- with $p.Params.price }}{{ $bits = $bits | append . }}{{ end -}}
+{{- end -}}
+{{- with $bits }}<p class="meta">{{ delimit . " · " }}</p>{{ end -}}
