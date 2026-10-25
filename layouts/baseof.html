@@ -7,6 +7,9 @@
   {{- $title := .Title }}
   {{- if eq .Kind "404" }}{{ $title = i18n "notFound" }}{{ end }}
   <title>{{ if .IsHome }}{{ $title }}{{ else }}{{ $title }} — {{ site.Title }}{{ end }}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300..600;1,300..400&display=swap">
   <link rel="canonical" href="{{ .Permalink }}">
   {{- range .AllTranslations }}
   <link rel="alternate" hreflang="{{ .Language.Locale }}" href="{{ .Permalink }}">

@@ -8,15 +8,16 @@
 .nav a[aria-current]{color:var(--on-wine-accent)}
 
 /* Section list pages */
-.section-head h1{font-family:var(--serif);font-weight:500;letter-spacing:-.035em;font-size:48px;margin:0;line-height:1}
+.section-head h1{font-family:var(--display);font-weight:300;letter-spacing:-.01em;font-size:48px;margin:0;line-height:1}
 .list-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-.cinema-grid h3 a{color:inherit}
+.blog-grid h3 a{color:inherit}
+.feature-card h3 a{font-size:inherit;font-weight:inherit}
 
 /* Single pages */
 .shell.prose{width:min(760px,calc(100% - 40px))}
-.prose h1{font-family:var(--serif);font-weight:500;letter-spacing:-.035em;font-size:clamp(40px,5vw,64px);line-height:1;margin:0 0 20px}
+.prose h1{font-family:var(--display);font-weight:300;letter-spacing:-.01em;font-size:clamp(40px,5vw,64px);line-height:1;margin:0 0 20px}
 .prose .lead{margin:24px 0}
-.prose p:not(.eyebrow):not(.meta):not(.lead){font-family:var(--serif);font-size:19px}
+.prose p:not(.eyebrow):not(.meta):not(.lead){font-family:var(--sans);font-size:19px}
 
 @media(max-width:900px){
   .lang-switch{margin-left:auto}
@@ -27,3 +28,15 @@
   .shell.prose{width:calc(100% - 28px)}
   .section-head h1{font-size:40px}
 }
+
+/* Article body: photos, section breaks, footnotes */
+.prose figure{margin:40px 0}
+.prose figure img{display:block;width:100%;height:auto}
+.prose figcaption{margin-top:10px;font-size:13px;color:var(--muted)}
+.prose hr{border:0;margin:48px 0;text-align:center}
+.prose hr:after{content:"* * *";letter-spacing:.6em;color:var(--wine)}
+.prose .footnotes{margin-top:56px;font-size:14px;color:var(--muted)}
+.prose .footnotes hr{display:none}
+.prose .footnotes p{font-size:14px !important}
+
+.prose h2{font-size:28px;margin:48px 0 16px}
