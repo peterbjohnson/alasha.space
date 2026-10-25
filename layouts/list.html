@@ -1,13 +1,13 @@
 {{ define "main" }}
-{{- $band := index (dict "books" "band" "cinema" "cinema-section" "events" "band warm") .Section }}
+{{- $band := index (dict "blog" "blog-section" "events" "band warm") .Section }}
 {{- $card := printf "cards/%s.html" .Section }}
 <section class="{{ $band }}">
   <div class="shell section">
-    {{ partial "section-head.html" (dict "eyebrow" .Params.eyebrow "heading" (.Params.heading | default .Title) "level" "h1" "light" (eq .Section "cinema")) }}
+    {{ partial "section-head.html" (dict "eyebrow" .Params.eyebrow "heading" (.Params.heading | default .Title) "level" "h1" "light" (eq .Section "blog")) }}
     {{- if eq .Section "events" }}
     {{ partial "event-list.html" .Pages.ByWeight }}
     {{- else }}
-    <div class="{{ if eq .Section "cinema" }}cinema-grid{{ else }}list-grid{{ end }}">
+    <div class="{{ if eq .Section "blog" }}blog-grid{{ else }}list-grid{{ end }}">
       {{- range $i, $p := .Pages.ByWeight }}
         {{- if templates.Exists (printf "_partials/%s" $card) }}
       {{ partial $card (dict "page" $p "index" $i) }}

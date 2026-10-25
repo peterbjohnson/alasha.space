@@ -1,7 +1,7 @@
 {{- with site.GetPage "/events" }}
 <section id="events" class="band warm">
   <div class="shell section">
-    {{ partial "section-head.html" (dict "eyebrow" .Params.eyebrow "heading" .Params.heading) }}
+    {{ partial "section-head.html" (dict "eyebrow" .Params.eyebrow "heading" .Params.heading "link" .RelPermalink "linkText" (i18n "allEvents")) }}
     {{ partial "event-list.html" (first 3 .Pages.ByWeight) }}
   </div>
 </section>

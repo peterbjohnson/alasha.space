@@ -1,0 +1,12 @@
+{{- with site.GetPage "/blog" }}
+<section id="blog" class="blog-section">
+  <div class="shell section">
+    {{ partial "section-head.html" (dict "eyebrow" .Params.eyebrow "heading" .Params.heading "light" true "link" .RelPermalink "linkText" (i18n "allPosts")) }}
+    <div class="blog-grid">
+      {{- range $i, $p := first 3 .Pages.ByWeight }}
+      {{ partial "cards/blog.html" (dict "page" $p "index" $i) }}
+      {{- end }}
+    </div>
+  </div>
+</section>
+{{- end }}

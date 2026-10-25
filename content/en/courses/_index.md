@@ -4,5 +4,5 @@ eyebrow: "Alashá school"
 heading: "Writing courses"
 menus:
   main:
-    weight: 50
+    weight: 30
 ---

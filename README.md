@@ -11,7 +11,7 @@ hugo --printI18nWarnings    # must finish with no errors or warnings
 ## Where things live
 
 - `content/<lang>/` — one folder per language, identical file paths (that is what links translations).
-  Sections: texts, books, interviews, cinema, courses, events, plus `about.md`. Order is by `weight`.
+  Sections: texts, blog, courses, events (announcements), plus `about.md`. Order is by `weight`.
 - `i18n/<lang>.toml` — every UI string. Templates contain no user-visible text.
 - `layouts/` — `baseof`, `home`, `list`, `single`, `404`; partials in `layouts/_partials/`
   (`home/` for homepage blocks, `cards/` for per-section cards shared by home and list pages).

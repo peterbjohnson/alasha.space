@@ -9,19 +9,11 @@
       <a class="button ghost" href="#courses">{{ .Params.ctaSecondary }}</a>
     </div>
   </div>
-  <aside class="hero-note">
-    <span class="note-mark">{{ .Params.noteMark }}</span>
-    <h2>{{ .Params.noteTitle }}</h2>
-    <p>{{ .Params.noteText }}</p>
-    {{- with site.GetPage "/texts" }}<a href="{{ .RelPermalink }}">{{ $.Params.noteLink }}</a>{{ end }}
-  </aside>
 </section>
 
 {{ partial "ornament.html" . }}
 {{ partial "home/texts.html" . }}
-{{ partial "home/books.html" . }}
-{{ partial "home/interview.html" . }}
-{{ partial "home/cinema.html" . }}
+{{ partial "home/blog.html" . }}
 {{ partial "home/courses.html" . }}
 {{ partial "home/events.html" . }}
 

@@ -1,8 +1,5 @@
 ---
-title: "Events"
-eyebrow: "Events"
+title: "Announcements"
+eyebrow: "Announcements"
 heading: "Meetings and events"
-menus:
-  main:
-    weight: 60
 ---
