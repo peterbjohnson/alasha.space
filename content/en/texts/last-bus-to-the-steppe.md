@@ -1,6 +1,6 @@
 ---
 title: "The last bus to the steppe"
-weight: 2
+weight: 4
 tag: "Story"
 region: "Kazakhstan"
 summary: "A night road, two strangers and a conversation after which life can't go on as before."

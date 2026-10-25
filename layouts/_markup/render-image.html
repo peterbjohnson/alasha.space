@@ -1,0 +1,11 @@
+{{- /* Page-bundle images become WebP figures; the title (if any) becomes the caption. */ -}}
+{{- $u := urls.Parse .Destination -}}
+{{- with .PageInner.Resources.Get $u.Path -}}
+  {{- $img := cond (gt .Width 1520) (.Resize "1520x webp") (.Process "webp") -}}
+<figure>
+  <img src="{{ $img.RelPermalink }}" width="{{ $img.Width }}" height="{{ $img.Height }}" alt="{{ $.PlainText }}" loading="lazy">
+  {{- with $.Title }}<figcaption>{{ . }}</figcaption>{{ end }}
+</figure>
+{{- else -}}
+<img src="{{ .Destination | safeURL }}" alt="{{ .PlainText }}">
+{{- end -}}

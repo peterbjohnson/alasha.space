@@ -1,6 +1,6 @@
 ---
 title: "Snow is an archive too"
-weight: 3
+weight: 5
 tag: "Column"
 region: "Yakutia"
 summary: "Notes on landscape, memory and a northern way of seeing."

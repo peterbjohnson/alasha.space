@@ -8,3 +8,6 @@ quickstart/
 
 .DS_Store
 __MACOSX/
+
+# Original manuscripts (docx / Google Docs exports), kept out of git
+sources/

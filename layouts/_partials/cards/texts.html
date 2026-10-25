@@ -2,7 +2,7 @@
 <article class="feature-card{{ if .large }} large{{ end }}">
   {{- with $p.Params.tag }}<div class="tag">{{ . }}</div>{{ end }}
   {{- partial "meta.html" (dict "page" $p) }}
-  <h3>{{ $p.Title }}</h3>
+  <h3><a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a></h3>
   {{- with $p.Params.summary }}<p>{{ . }}</p>{{ end }}
   <a href="{{ $p.RelPermalink }}">{{ if .large }}{{ i18n "readText" }}{{ else }}{{ i18n "read" }}{{ end }}</a>
 </article>

@@ -23,6 +23,11 @@ disableKinds = ['taxonomy', 'term']
     [languages.en.params]
       description = 'Alashá space — a space for women writers from Central and North Asia.'
 
+# Publish bundle files (e.g. original photos) only when a template uses them.
+[[cascade]]
+  [cascade.build]
+    publishResources = false
+
 [params]
   email = 'hello@alasha.space'
   [[params.social]]
@@ -34,3 +39,6 @@ disableKinds = ['taxonomy', 'term']
   [[params.social]]
     name = 'YouTube'
     url = '#'
+
+[markup.goldmark.parser]
+  wrapStandAloneImageWithinParagraph = false
