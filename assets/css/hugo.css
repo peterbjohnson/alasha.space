@@ -2,10 +2,10 @@
 
 /* Language switcher */
 .lang-switch{display:flex;gap:10px;font-size:12px;font-weight:700;letter-spacing:.12em}
-.lang-switch [aria-current]{color:var(--wine)}
+.lang-switch [aria-current]{color:var(--on-wine-accent)}
 
 /* Current section in the main nav */
-.nav a[aria-current]{color:var(--wine)}
+.nav a[aria-current]{color:var(--on-wine-accent)}
 
 /* Section list pages */
 .section-head h1{font-family:var(--serif);font-weight:500;letter-spacing:-.035em;font-size:48px;margin:0;line-height:1}
