@@ -2,6 +2,7 @@
 title: "Рая"
 author: "Гайнижамал Изтелеу"
 weight: 2
+year: 2026
 tag: "Эссе"
 region: "Казахстан"
 minutes: 7

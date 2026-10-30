@@ -4,6 +4,7 @@
 {{- if .full }}{{ with $p.Params.tag }}{{ $bits = $bits | append . }}{{ end }}{{ end -}}
 {{- with $p.Params.author }}{{ $bits = $bits | append . }}{{ end -}}
 {{- with $p.Params.region }}{{ $bits = $bits | append . }}{{ end -}}
+{{- with $p.Params.year }}{{ $bits = $bits | append (string .) }}{{ end -}}
 {{- with $p.Params.kicker }}{{ $bits = $bits | append . }}{{ end -}}
 {{- with $p.Params.minutes }}{{ $bits = $bits | append (printf "%v %s" . (i18n "minutes")) }}{{ end -}}
 {{- if .full -}}

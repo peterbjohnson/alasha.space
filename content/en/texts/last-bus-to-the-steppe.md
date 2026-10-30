@@ -2,6 +2,7 @@
 placeholder: true
 title: "The last bus to the steppe"
 weight: 4
+year: 2026
 tag: "Story"
 region: "Kazakhstan"
 summary: "A night road, two strangers and a conversation after which life can't go on as before."

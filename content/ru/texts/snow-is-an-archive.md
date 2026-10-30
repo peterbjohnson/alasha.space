@@ -2,6 +2,7 @@
 placeholder: true
 title: "Снег — это тоже архив"
 weight: 5
+year: 2026
 tag: "Колонка"
 region: "Якутия"
 summary: "Заметки о ландшафте, памяти и северной оптике."

@@ -2,6 +2,7 @@
 placeholder: true
 title: "The language my grandmother kept silent in"
 weight: 3
+year: 2026
 tag: "Essay"
 region: "Kyrgyzstan"
 summary: "On family memory, translation and words that return across generations."
