@@ -3,6 +3,7 @@
   {{- with .Parent }}{{ if not .IsHome }}
   <p class="eyebrow"><a href="{{ .RelPermalink }}">{{ .Params.eyebrow | default .Title }}</a></p>
   {{- end }}{{ end }}
+  {{ partial "placeholder.html" . }}
   <h1>{{ .Title }}</h1>
   {{- partial "meta.html" (dict "page" . "full" true) }}
   {{- with .Params.summary }}<p class="lead">{{ . }}</p>{{ end }}

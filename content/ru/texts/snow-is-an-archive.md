@@ -1,4 +1,5 @@
 ---
+placeholder: true
 title: "Снег — это тоже архив"
 weight: 5
 tag: "Колонка"

@@ -1,4 +1,5 @@
 ---
+placeholder: true
 title: "Snow is an archive too"
 weight: 5
 tag: "Column"

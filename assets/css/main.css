@@ -1,6 +1,6 @@
 :root{
   --ink:#211b18; --cream:#f5efe3; --paper:#fbf8f1; --wine:#7d181b; --wine-dark:#5f1114;
-  --gold:#b98235; --sage:#4e5947; --sand:#dfcfaf; --line:#d9cdb9;
+  --gold:#b98235; --sage:#4e5947; --sand:#dfcfaf; --line:#d9cdb9; --placeholder:#f2c94c;
   --sans: Jost, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --display: var(--sans);
   /* Text */ --ink-soft:#524943; --muted:#766a60;

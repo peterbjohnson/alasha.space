@@ -1,6 +1,7 @@
 {{ define "main" }}
 <section class="hero shell">
   <div class="hero-copy">
+    {{ partial "placeholder.html" . }}
     {{- with .Params.eyebrow }}<p class="eyebrow">{{ . }}</p>{{ end }}
     <h1>{{ .Params.heading | default .Title | safeHTML }}</h1>
     {{- with .Params.lead }}<p class="lead">{{ . }}</p>{{ end }}

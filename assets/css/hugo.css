@@ -40,3 +40,7 @@
 .prose .footnotes p{font-size:14px !important}
 
 .prose h2{font-size:28px;margin:48px 0 16px}
+
+/* Mock content marker (front matter `placeholder: true`) */
+.placeholder-badge{align-self:flex-start;display:inline-block;margin:0 0 12px;padding:3px 8px;background:var(--placeholder);color:var(--ink);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;line-height:1.4}
+.event .placeholder-badge{margin-bottom:6px}

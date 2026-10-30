@@ -1,4 +1,5 @@
 ---
+placeholder: true
 title: "Последний автобус в степь"
 weight: 4
 tag: "Рассказ"

@@ -1,4 +1,5 @@
 ---
+placeholder: true
 title: "Alashá space — texts, articles and writing courses"
 eyebrow: "Women's voices of Central and North Asia"
 heading: "A place where writing becomes <em>space</em>"

@@ -1,4 +1,5 @@
 ---
+placeholder: true
 title: "Семейная память"
 weight: 3
 tag: "Эссе"

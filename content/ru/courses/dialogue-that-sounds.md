@@ -1,4 +1,5 @@
 ---
+placeholder: true
 title: "Диалог, который звучит"
 weight: 2
 kicker: "Видеокурс · 6 уроков"

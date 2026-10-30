@@ -1,5 +1,6 @@
 {{- $p := .page -}}
 <article>
+  {{ partial "placeholder.html" $p }}
   <span>{{ printf "%02d" (add .index 1) }}</span>
   <h3><a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a></h3>
   {{- with $p.Params.summary }}<p>{{ . }}</p>{{ end }}

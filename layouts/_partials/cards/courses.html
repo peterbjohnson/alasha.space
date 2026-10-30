@@ -1,5 +1,6 @@
 {{- $p := .page -}}
 <article class="course-card {{ if $p.Params.featured }}featured{{ else }}pale{{ end }}">
+  {{ partial "placeholder.html" $p }}
   {{- with $p.Params.kicker }}<p class="kicker">{{ . }}</p>{{ end }}
   <h3>{{ $p.Title }}</h3>
   {{- with $p.Params.summary }}<p>{{ . }}</p>{{ end }}

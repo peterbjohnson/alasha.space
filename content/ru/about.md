@@ -1,4 +1,5 @@
 ---
+placeholder: true
 title: "О проекте"
 ---
 

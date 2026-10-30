@@ -1,5 +1,6 @@
 {{- $p := .page -}}
 <article class="feature-card{{ if .large }} large{{ end }}">
+  {{ partial "placeholder.html" $p }}
   {{- with $p.Params.tag }}<div class="tag">{{ . }}</div>{{ end }}
   {{- partial "meta.html" (dict "page" $p) }}
   <h3><a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a></h3>

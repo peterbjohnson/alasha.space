@@ -1,4 +1,5 @@
 ---
+placeholder: true
 title: "The last bus to the steppe"
 weight: 4
 tag: "Story"

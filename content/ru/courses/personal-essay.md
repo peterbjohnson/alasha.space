@@ -1,4 +1,5 @@
 ---
+placeholder: true
 title: "Личный текст: от наблюдения к эссе"
 weight: 1
 kicker: "Видеокурс · 8 уроков"

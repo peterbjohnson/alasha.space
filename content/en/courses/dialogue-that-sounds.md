@@ -1,4 +1,5 @@
 ---
+placeholder: true
 title: "Dialogue that rings true"
 weight: 2
 kicker: "Video course · 6 lessons"

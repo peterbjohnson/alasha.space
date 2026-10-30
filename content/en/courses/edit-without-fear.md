@@ -1,4 +1,5 @@
 ---
+placeholder: true
 title: "Editing without fear"
 weight: 3
 kicker: "Mini-course · 4 lessons"

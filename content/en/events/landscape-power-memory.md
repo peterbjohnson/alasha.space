@@ -1,4 +1,5 @@
 ---
+placeholder: true
 title: "Landscape, power and memory in contemporary cinema"
 weight: 3
 kicker: "Film conversation"

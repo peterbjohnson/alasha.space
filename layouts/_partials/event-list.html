@@ -4,7 +4,7 @@
     {{- $d := time.AsTime .Params.eventDate }}
   <a class="event" href="{{ .RelPermalink }}">
     <time datetime="{{ $d.Format "2006-01-02" }}">{{ $d.Format "02" }}<br><small>{{ strings.TrimSuffix "." (time.Format "Jan" $d) }}</small></time>
-    <div>{{ with .Params.kicker }}<p class="meta">{{ . }}</p>{{ end }}<h3>{{ .Title }}</h3></div>
+    <div>{{ partial "placeholder.html" . }}{{ with .Params.kicker }}<p class="meta">{{ . }}</p>{{ end }}<h3>{{ .Title }}</h3></div>
     <span>{{ with .Params.eventTime }}{{ . }} {{ end }}→</span>
   </a>
   {{- end }}

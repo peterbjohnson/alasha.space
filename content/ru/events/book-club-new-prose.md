@@ -1,4 +1,5 @@
 ---
+placeholder: true
 title: "Читаем новую прозу женщин Центральной Азии"
 weight: 2
 kicker: "Книжный клуб"

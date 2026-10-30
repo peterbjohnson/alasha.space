@@ -1,4 +1,5 @@
 ---
+placeholder: true
 title: "The personal text: from observation to essay"
 weight: 1
 kicker: "Video course · 8 lessons"

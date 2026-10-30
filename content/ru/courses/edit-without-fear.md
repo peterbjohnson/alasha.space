@@ -1,4 +1,5 @@
 ---
+placeholder: true
 title: "Редактировать без страха"
 weight: 3
 kicker: "Мини-курс · 4 урока"

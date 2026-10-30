@@ -1,4 +1,5 @@
 ---
+placeholder: true
 title: "Reading new prose by women of Central Asia"
 weight: 2
 kicker: "Book club"
