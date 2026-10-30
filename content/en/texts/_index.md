@@ -1,6 +1,6 @@
 ---
 title: "Texts"
-eyebrow: "Journal"
+eyebrow: "Texts"
 heading: "New texts"
 menus:
   main:

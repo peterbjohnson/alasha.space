@@ -1,6 +1,6 @@
 ---
 title: "Тексты"
-eyebrow: "Журнал"
+eyebrow: "Тексты"
 heading: "Новые тексты"
 menus:
   main:

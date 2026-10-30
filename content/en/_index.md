@@ -11,5 +11,5 @@ submitTitle: "Have a text?"
 submitText: "We accept stories, essays, columns and experimental forms from women writers connected to Central and North Asia."
 submitFine: "Please attach a short bio and your text as .docx or Google Docs."
 newsletterEyebrow: "Alashá letters"
-newsletterTitle: "Every two weeks — the best of the journal and new events"
+newsletterTitle: "Every two weeks — new texts and announcements"
 ---
